@@ -68,7 +68,8 @@ def template_matching(img_dir, template_dir, return_ori=False, vis=False):
 
 
 if __name__ == '__main__':
-    template_dir = 'pacman/'
+    template_dir = '/data/templates/pacman/'
     img = 'data/02.jpg'
     img_res = template_matching(img, template_dir,
-                                vis=True, return_ori=True)
+                                vis=False, return_ori=False)
+    print(img_res.shape)
